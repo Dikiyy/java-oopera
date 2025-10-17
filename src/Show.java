@@ -45,13 +45,13 @@ public class Show {
         this.listOfActors = listOfActors;
     }
 
-    public void printAllActors(){
-        if(listOfActors == null || listOfActors.isEmpty()){
+    public void printAllActors() {
+        if (listOfActors == null || listOfActors.isEmpty()) {
             System.out.println("Список актеров пуст.");
             return;
         }
-        for(Actor actor_ : listOfActors){
-            System.out.println("Name: "+actor_.getName()+"\n Surname:" + actor_.getSurname() + "\n("+actor_.getHeight()+")");
+        for (Actor actor_ : listOfActors) {
+            System.out.println("Name: " + actor_.getName() + "\n Surname:" + actor_.getSurname() + "\n(" + actor_.getHeight() + ")");
         }
     }
 
@@ -79,23 +79,23 @@ public class Show {
         }
     }
 
-    public void changeActor(Actor newActor, String surname){
+    public void changeActor(Actor newActor, String surname) {
         if (newActor == null || listOfActors.isEmpty() || surname == null || surname.isEmpty()) {
             System.out.println("Нельзя заменить актера.");
             return;
         }
-        if(listOfActors.contains(newActor)){
-            System.out.println("Данный актер уже учавсует в шоу");
+        if (listOfActors.contains(newActor)) {
+            System.out.println("Данный актер уже учавствует в шоу");
             return;
         }
         boolean isReplaced = false;
-        for(int i = 0 ; i < listOfActors.size(); i++){
+        for (int i = 0; i < listOfActors.size(); i++) {
             String tmp = listOfActors.get(i).getSurname();
-            if(surname.equalsIgnoreCase(tmp)){
+            if (surname.equalsIgnoreCase(tmp)) {
                 listOfActors.remove(i);
-                System.out.println("Актер: " + tmp +"удален");
+                System.out.println("Актер: " + tmp + "удален");
                 listOfActors.add(i, newActor);
-                System.out.println("Актер: " + newActor.getSurname() +"доблен в шоу");
+                System.out.println("Актер: " + newActor.getSurname() + "доблен в шоу");
                 isReplaced = true;
                 break;
             }
@@ -103,21 +103,5 @@ public class Show {
         if (!isReplaced) {
             System.out.println("Актёр с фамилией " + surname + " не найден. Замена не выполнена.");
         }
-
-
-//        for(Actor actor : listOfActors){
-//            if(surname.equalsIgnoreCase(actor.getSurname())){
-//                removeActorFromShow(actor);
-//            }
-//        }
-//        listOfActors.add(newActor);
-
     }
-//    public void removeActorFromShow(Actor actorToRemove){
-//        if(actorToRemove == null || listOfActors.isEmpty()){
-//            System.out.println("Нельзя удалить актера");
-//        }
-//        listOfActors.remove(actorToRemove);
-//
-//    }
 }
