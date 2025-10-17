@@ -85,7 +85,7 @@ public class Show {
             return;
         }
         if (listOfActors.contains(newActor)) {
-            System.out.println("Данный актер уже учавсует в шоу");
+            System.out.println("Данный актер уже учавствует в шоу");
             return;
         }
         boolean isReplaced = false;

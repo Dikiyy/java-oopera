@@ -15,7 +15,7 @@ public class Main {
         Director director2 = new Director("Йозеф", "Боушка", 184, Gender.MALE, 12);
 
 
-        String musicAuthor = "П. И. Чайковский"; // для MusicalShow/Opera/Ballet
+        Person musicAuthor = new Person("Пётр", "Чайковский", 175, Gender.MALE);
         Person choreographer = new Person("Джордж", "Баланчин", 180, Gender.MALE);
 
         Show drama = new Show(
@@ -30,7 +30,7 @@ public class Main {
                 150,
                 director2,
                 new ArrayList<>(),
-                "Cheng Kang",
+                musicAuthor,
                 "TestOperaLibretto",
                 40
         );
