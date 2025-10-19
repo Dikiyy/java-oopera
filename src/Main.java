@@ -19,12 +19,12 @@ public class Main {
         Actor actor3 = new Actor("Sofiia", "Tochona", 172, Gender.FEMALE);
 
 
-        Director director1 = new Director("Мартин", "Блаха", 175, Gender.MALE, 31);
-        Director director2 = new Director("Йозеф", "Боушка", 184, Gender.MALE, 12);
+        Director director1 = new Director("Мартин", "Блаха", Gender.MALE, 31);
+        Director director2 = new Director("Йозеф", "Боушка", Gender.MALE, 12);
 
 
-        Person musicAuthor = new Person("Пётр", "Чайковский", 175, Gender.MALE);
-        Person choreographer = new Person("Джордж", "Баланчин", 180, Gender.MALE);
+        Person musicAuthor = new Person("Пётр", "Чайковский", Gender.MALE);
+        Person choreographer = new Person("Джордж", "Баланчин", Gender.MALE);
 
         Show drama = new Show(
                 "test spektakl title",
