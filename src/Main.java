@@ -1,3 +1,11 @@
+import Humans.Actor;
+import Humans.Director;
+import Humans.Gender;
+import Humans.Person;
+import Theatre.Ballet;
+import Theatre.Opera;
+import Theatre.Show;
+
 import java.util.ArrayList;
 
 public class Main {
