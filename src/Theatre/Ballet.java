@@ -1,6 +1,12 @@
+package Theatre;
+
+import Humans.Actor;
+import Humans.Director;
+import Humans.Person;
+
 import java.util.ArrayList;
 
-public class Ballet extends MusicalShow{
+public class Ballet extends MusicalShow {
     private Person choreographer;
 
     public Ballet(String title, int duration, Director director, ArrayList<Actor> listOfActors,

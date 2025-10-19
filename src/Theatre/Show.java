@@ -1,3 +1,8 @@
+package Theatre;
+
+import Humans.Actor;
+import Humans.Director;
+
 import java.util.ArrayList;
 
 public class Show {
